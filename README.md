@@ -5,18 +5,18 @@ A [Probot](https://github.com/Unity-Billal-mesloub/probot) extension to make it 
 ## Usage
 
 ```shell
-$ npm install @probot/serverless-gcf
+$ npm install @Unity-Billal-mesloub/serverless-gcf
 ```
 
 ```javascript
 // handler.js
-const { serverless } = require('@probot/serverless-gcf');
+const { serverless } = require('@Unity-Billal-mesloub/serverless-gcf');
 const appFn = require('./')
 module.exports.probot = serverless(appFn)
 ```
 
 ## Configuration
-This package moves the functionality of `probot run` into a handler suitable for usage on Google Cloud Functions. Follow the documentation on [Environment Configuration](https://probot.github.io/docs/configuration/) to setup your app's environment variables. You can add these to `.env`, but for security reasons you may want to use the [gcloud cli](https://cloud.google.com/sdk/gcloud/) or [Serverless Framework](https://github.com/Unity-Billal-mesloub/serverless) to set Environment Variables for the function so you don't have to include any secrets in the deployed package.
+This package moves the functionality of `Unity-Billal-mesloub run` into a handler suitable for usage on Google Cloud Functions. Follow the documentation on [Environment Configuration](https://probot.github.io/docs/configuration/) to setup your app's environment variables. You can add these to `.env`, but for security reasons you may want to use the [gcloud cli](https://cloud.google.com/sdk/gcloud/) or [Serverless Framework](https://github.com/Unity-Billal-mesloub/serverless) to set Environment Variables for the function so you don't have to include any secrets in the deployed package.
 
 ## Differences from `probot run`
 
